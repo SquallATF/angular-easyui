@@ -13,6 +13,7 @@ export declare class GridViewComponent {
     viewIndex: number;
     rows: any[];
     footerRows: any[];
+    filterable: boolean;
     bodyScroll: EventEmitter<{}>;
     readonly viewCls: string;
     scrollTop: number;

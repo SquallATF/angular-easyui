@@ -18,6 +18,13 @@ export declare class ListBaseComponent {
     total: number;
     idField: string;
     selectionMode: string;
+    filterable: boolean;
+    filterRules: any[];
+    filterDelay: number;
+    filterMatchingType: string;
+    filterPosition: string;
+    filterBtnPosition: string;
+    filterChange: EventEmitter<{}>;
     selectionChange: EventEmitter<{}>;
     pageChange: EventEmitter<{}>;
     rowSelect: EventEmitter<{}>;
@@ -34,8 +41,11 @@ export declare class ListBaseComponent {
     selectedCells: any[];
     rows: any[];
     _data: any[];
+    _filteredData: any[];
+    _filterOperators: any;
     selection: any;
     data: any[];
+    filterOperators: any;
     ngOnInit(): void;
     ngAfterContentInit(): void;
     ngAfterViewInit(): void;
@@ -45,6 +55,8 @@ export declare class ListBaseComponent {
     onRowClick(row: any, event: any): void;
     onCellClick(row: any, column: any, event: any): void;
     sortData(): void;
+    filterData(data: any[]): any[];
+    doFilter(rule?: any): void;
     doEnter(): void;
     getSelectedIndex(row: any): number;
     getSelectedCellIndex(row: any, column: any): number;
@@ -57,4 +69,50 @@ export declare class ListBaseComponent {
     unselectCell(row: any, column: any): void;
     clearSelections(): void;
     navRow(step: number): void;
+    readonly defaultOperators: {
+        nofilter: {
+            text: string;
+            isMatch: () => boolean;
+        };
+        contains: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        equal: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        notequal: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        beginwith: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        endwith: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        less: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        lessorequal: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        greater: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+        greaterorequal: {
+            text: string;
+            isMatch: (source: any, value: any) => boolean;
+        };
+    };
+    getFilterRuleIndex(field: string): number;
+    getFilterRule(field: string): any;
+    addFilterRule(rule: any): void;
+    removeFilterRule(field: string): void;
 }

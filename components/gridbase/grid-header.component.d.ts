@@ -8,8 +8,12 @@ export declare class GridHeaderComponent {
     columns: GridColumnComponent[];
     columnGroup: GridColumnGroupComponent;
     paddingWidth: number;
+    filterable: boolean;
+    grid: any;
     cellClick: EventEmitter<{}>;
     hoverColumn: GridColumnComponent;
+    readonly filterOnTop: boolean;
+    readonly filterOnBottom: boolean;
     _height: number;
     height: number;
     private _scrollLeft;
