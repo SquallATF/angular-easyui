@@ -1,0 +1,24 @@
+{
+  "name": "angular-easyui",
+  "version": "0.1.0",
+  "description": "EasyUI for Angular",
+  "main": "./components/easyui/easyui.module.js",
+  "types": "./components/easyui/easyui.module.d.ts"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SquallATF/angular-easyui.git"
+  },
+  "keywords": [
+    "angular-easyui",
+    "easyui"
+  ],
+  "author": "EasyUI",
+  "license": "SEE LICENSE IN license_freeware.txt",
+  "bugs": {
+    "url": "https://github.com/SquallATF/angular-easyui/issues"
+  },
+  "homepage": "https://github.com/SquallATF/angular-easyui#readme"
+}

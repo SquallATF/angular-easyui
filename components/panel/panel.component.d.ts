@@ -1,0 +1,34 @@
+import { QueryList, ElementRef } from '@angular/core';
+import { PanelHeaderComponent } from './panel-header.component';
+import { PanelFooterComponent } from './panel-footer.component';
+export declare const PANEL_TEMPLATE: string;
+export declare class PanelComponent {
+    hostRef: ElementRef;
+    headerRef: ElementRef;
+    bodyRef: ElementRef;
+    footerRef: ElementRef;
+    headers: QueryList<PanelHeaderComponent>;
+    footers: QueryList<PanelFooterComponent>;
+    title: string;
+    iconCls: string;
+    border: boolean;
+    closed: boolean;
+    collapsed: boolean;
+    collapsible: boolean;
+    showHeader: boolean;
+    showFooter: boolean;
+    expandIconCls: string;
+    collapseIconCls: string;
+    panelCls: string;
+    panelStyle: any;
+    headerCls: string;
+    headerStyle: any;
+    bodyCls: string;
+    bodyStyle: any;
+    footerCls: string;
+    footerStyle: any;
+    readonly hasHeader: boolean;
+    readonly hasFooter: boolean;
+    constructor(hostRef: ElementRef);
+    onClickCollapsibleTool(event: any): void;
+}
