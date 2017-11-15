@@ -251,6 +251,9 @@ eui-button-group eui-linkbutton:last-child .l-btn{
 .switchbutton-checked .switchbutton-inner{
 	left: 0;
 }
+.draggable-reverting{
+	transition: all 200ms ease-out;
+}
 
 
 .panel{
@@ -324,6 +327,22 @@ eui-button-group eui-linkbutton:last-child .l-btn{
 .combobox-item{
 	padding: 6px 4px;
 	line-height: 18px;
+}
+.tagbox-labels{
+	padding-bottom: 4px;
+}
+.tagbox-label{
+	height: 20px;
+	line-height: 20px;
+}
+.tagbox .textbox-text{
+	width: 50px;
+	max-width: 100%;
+	margin-top: 4px;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 20px;
+	line-height: 20px;
 }
 
 .datagrid,eui-datagrid,
@@ -528,10 +547,16 @@ eui-menu> .menu-container{
 }
 
 
-eui-textbox,eui-passwordbox,eui-combobox,eui-combotree,eui-combogrid,eui-numberbox,eui-searchbox,
+eui-textbox,eui-passwordbox,eui-combobox,eui-combotree,eui-combogrid,
+eui-numberbox,eui-searchbox,
 eui-datebox,eui-timespinner,eui-datetimespinner{
 	width: 12em;
 	height: 30px;
+}
+eui-tagbox{
+	width: 12em;
+	height: auto;
+	min-height: 30px;
 }
 eui-switchbutton{
 	width: 70px;

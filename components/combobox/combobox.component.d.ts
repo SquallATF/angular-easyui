@@ -2,6 +2,7 @@ import { EventEmitter } from '@angular/core';
 import { ComboBaseComponent } from '../base/combo-base.component';
 import { ItemTemplateDirective } from '../base/template-base';
 import { DataListComponent } from '../datalist/datalist.component';
+export declare const COMBOBOX_PANEL_TEMPLATE: string;
 export declare const COMBOBOX_TEMPLATE: string;
 export declare class ComboBoxComponent extends ComboBaseComponent<any> {
     datalist: DataListComponent;
@@ -26,8 +27,8 @@ export declare class ComboBoxComponent extends ComboBaseComponent<any> {
     displayingText: string;
     lastFilterValue: string;
     items: any;
-    private _data;
-    private _text;
+    _data: any[];
+    _text: string;
     data: any[];
     text: string;
     ngAfterContentInit(): void;
