@@ -17,4 +17,5 @@ export declare class TreeNodeComponent {
     toggle(event: any): void;
     onClickNode(event: any): void;
     onCheckNode(event: any): void;
+    onNodeContextMenu(event: any): void;
 }

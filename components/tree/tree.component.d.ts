@@ -15,6 +15,7 @@ export declare class TreeComponent {
     nodeCheck: EventEmitter<{}>;
     nodeUncheck: EventEmitter<{}>;
     checkChange: EventEmitter<{}>;
+    nodeContextMenu: EventEmitter<{}>;
     highlightNode: any;
     readonly checkedNodes: any[];
     getCheckedNodes(state?: string): any[];
