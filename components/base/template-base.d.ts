@@ -7,6 +7,10 @@ export declare class HeaderTemplateDirective {
     template: TemplateRef<any>;
     constructor(template: TemplateRef<any>);
 }
+export declare class BodyTemplateDirective {
+    template: TemplateRef<any>;
+    constructor(template: TemplateRef<any>);
+}
 export declare class CellTemplateDirective {
     template: TemplateRef<any>;
     constructor(template: TemplateRef<any>);
