@@ -15,7 +15,7 @@ export declare class ComboBaseComponent<T> extends InputBaseComponent<T> {
     multiple: boolean;
     separator: string;
     delay: number;
-    private _cls;
+    _cls: string;
     cls: string;
     panelClosed: boolean;
     panelLeft: number;

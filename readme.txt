@@ -1,4 +1,4 @@
-Current Version: 0.5
+Current Version: 0.6
 ======================
 This software is allowed to use under freeware license or you need to buy commercial license for better support or other purpose.
 Please contact us at info@jeasyui.com

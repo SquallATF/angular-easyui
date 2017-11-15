@@ -8,6 +8,10 @@ export declare class DomHelper {
         left: any;
         top: any;
     };
+    position(element: any): {
+        left: number;
+        top: number;
+    };
     getScrollLeft(): number;
     getScrollTop(): number;
     getViewport(): {

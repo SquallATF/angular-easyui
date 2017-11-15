@@ -1,5 +1,5 @@
 /**
- * EasyUI for Angular 0.5
+ * EasyUI for Angular 0.6
  * 
  * Copyright (c) 2009-2017 www.jeasyui.com. All rights reserved.
  *
