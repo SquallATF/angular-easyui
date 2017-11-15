@@ -13,7 +13,7 @@ export declare class LinkButtonComponent {
     size: string;
     href: string;
     btnCls: string;
-    btnStyle: any;
+    btnStyle: Object;
     click: EventEmitter<{}>;
     private _text;
     text: string;

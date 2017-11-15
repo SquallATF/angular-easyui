@@ -4,6 +4,7 @@ import { PanelFooterComponent } from './panel-footer.component';
 export declare const PANEL_TEMPLATE: string;
 export declare class PanelComponent {
     hostRef: ElementRef;
+    panelRef: ElementRef;
     headerRef: ElementRef;
     bodyRef: ElementRef;
     footerRef: ElementRef;
@@ -15,20 +16,25 @@ export declare class PanelComponent {
     closed: boolean;
     collapsed: boolean;
     collapsible: boolean;
+    closable: boolean;
     showHeader: boolean;
     showFooter: boolean;
     expandIconCls: string;
     collapseIconCls: string;
+    closeIconCls: string;
     panelCls: string;
-    panelStyle: any;
+    panelStyle: Object;
     headerCls: string;
-    headerStyle: any;
+    headerStyle: Object;
     bodyCls: string;
-    bodyStyle: any;
+    bodyStyle: Object;
     footerCls: string;
-    footerStyle: any;
+    footerStyle: Object;
+    collapseToShrinkBody: boolean;
     readonly hasHeader: boolean;
     readonly hasFooter: boolean;
+    isBodyCollapsed(): boolean;
     constructor(hostRef: ElementRef);
     onClickCollapsibleTool(event: any): void;
+    onClickCloseTool(event: any): void;
 }

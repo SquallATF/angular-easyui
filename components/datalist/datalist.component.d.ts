@@ -7,7 +7,7 @@ export declare class DataListComponent extends ListBaseComponent {
     vscroll: VirtualScrollComponent;
     innerRef: ElementRef;
     itemTemplate: ItemTemplateDirective;
-    itemStyle: any;
+    itemStyle: Object;
     itemCls: string;
     hoverCls: string;
     selectedCls: string;

@@ -15,9 +15,9 @@ export declare class MenuComponent {
     inline: boolean;
     noline: boolean;
     closed: boolean;
+    duration: number;
     itemClick: EventEmitter<{}>;
     timer: any;
-    duration: number;
     constructor(hostRef: ElementRef, renderer: Renderer2, cdRef: ChangeDetectorRef);
     ngAfterContentInit(): void;
     ngOnDestroy(): void;

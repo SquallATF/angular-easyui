@@ -1,5 +1,5 @@
 /**
- * EasyUI for Angular 0.1
+ * EasyUI for Angular 0.2
  * 
  * Copyright (c) 2009-2017 www.jeasyui.com. All rights reserved.
  *
@@ -7,30 +7,4 @@
  * To use it on other terms please contact us: info@jeasyui.com
  *
  */
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { TimeSpinnerComponent } from './timespinner.component';
-var TimeSpinnerModule = (function () {
-    function TimeSpinnerModule() {
-    }
-    return TimeSpinnerModule;
-}());
-export { TimeSpinnerModule };
-TimeSpinnerModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [
-                    TimeSpinnerComponent
-                ],
-                imports: [
-                    CommonModule,
-                    FormsModule
-                ],
-                exports: [
-                    TimeSpinnerComponent
-                ]
-            },] },
-];
-/** @nocollapse */
-TimeSpinnerModule.ctorParameters = function () { return []; };
-//# sourceMappingURL=timespinner.module.js.map
+import{NgModule}from"@angular/core";import{CommonModule}from"@angular/common";import{FormsModule}from"@angular/forms";import{TimeSpinnerComponent}from"./timespinner.component";var TimeSpinnerModule=function(){return function(){}}();export{TimeSpinnerModule};TimeSpinnerModule.decorators=[{type:NgModule,args:[{declarations:[TimeSpinnerComponent],imports:[CommonModule,FormsModule],exports:[TimeSpinnerComponent]}]}],TimeSpinnerModule.ctorParameters=function(){return[]};

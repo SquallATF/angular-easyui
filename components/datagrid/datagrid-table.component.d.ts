@@ -12,6 +12,13 @@ export declare class DataGridTableComponent {
     readonly titleLeft: number;
     constructor(gridBody: DataGridBodyComponent);
     onRowClick(row: any, event: any): void;
+    onRowDblClick(row: any, event: any): void;
+    onRowContextMenu(row: any, event: any): void;
+    onCellClick(row: any, col: any, rowEl: any, cellEl: any, event: any): void;
+    onCellDblClick(row: any, col: any, rowEl: any, cellEl: any, event: any): void;
+    onCellContextMenu(row: any, col: any, event: any): void;
+    doEdit(row: any, col: any, rowEl: any, cellEl: any): void;
+    onCellKeyDown(row: any, col: any, cell: any, event: any): void;
     onGroupExpanderClick(value: any, event: any): void;
     onDetailExpanderClick(row: any, event: any): void;
     getRowIndex(rowIndex: number): any;
@@ -20,4 +27,5 @@ export declare class DataGridTableComponent {
     getRowStyle(row: any): any;
     getCellClass(column: any, row: any): any;
     getCellStyle(column: any, row: any): any;
+    isEditable(row: any, col: any): boolean;
 }

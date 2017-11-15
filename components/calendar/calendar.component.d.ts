@@ -8,7 +8,7 @@ export declare class CalendarComponent {
     border: boolean;
     showWeek: boolean;
     weekNumberHeader: string;
-    selection: any;
+    selection: Date;
     validator: Function;
     selectionChange: EventEmitter<{}>;
     highlightDay: any;

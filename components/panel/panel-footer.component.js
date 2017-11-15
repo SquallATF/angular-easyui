@@ -1,5 +1,5 @@
 /**
- * EasyUI for Angular 0.1
+ * EasyUI for Angular 0.2
  * 
  * Copyright (c) 2009-2017 www.jeasyui.com. All rights reserved.
  *
@@ -7,19 +7,4 @@
  * To use it on other terms please contact us: info@jeasyui.com
  *
  */
-import { Component } from '@angular/core';
-var PanelFooterComponent = (function () {
-    function PanelFooterComponent() {
-    }
-    return PanelFooterComponent;
-}());
-export { PanelFooterComponent };
-PanelFooterComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'eui-panel-footer',
-                template: '<ng-content></ng-content>'
-            },] },
-];
-/** @nocollapse */
-PanelFooterComponent.ctorParameters = function () { return []; };
-//# sourceMappingURL=panel-footer.component.js.map
+import{Component}from"@angular/core";var PanelFooterComponent=function(){return function(){}}();export{PanelFooterComponent};PanelFooterComponent.decorators=[{type:Component,args:[{selector:"eui-panel-footer",template:"<ng-content></ng-content>"}]}],PanelFooterComponent.ctorParameters=function(){return[]};

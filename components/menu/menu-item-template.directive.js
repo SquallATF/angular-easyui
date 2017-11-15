@@ -1,5 +1,5 @@
 /**
- * EasyUI for Angular 0.1
+ * EasyUI for Angular 0.2
  * 
  * Copyright (c) 2009-2017 www.jeasyui.com. All rights reserved.
  *
@@ -7,35 +7,4 @@
  * To use it on other terms please contact us: info@jeasyui.com
  *
  */
-import { Directive, ViewContainerRef, Input } from '@angular/core';
-var MenuItemTemplateDirective = (function () {
-    function MenuItemTemplateDirective(viewContainer) {
-        this.viewContainer = viewContainer;
-    }
-    MenuItemTemplateDirective.prototype.ngOnInit = function () {
-        this.view = this.viewContainer.createEmbeddedView(this.template, {
-            '\$implicit': this.value,
-            'text': this.text
-        });
-    };
-    MenuItemTemplateDirective.prototype.ngOnDestroy = function () {
-        this.view.destroy();
-    };
-    return MenuItemTemplateDirective;
-}());
-export { MenuItemTemplateDirective };
-MenuItemTemplateDirective.decorators = [
-    { type: Directive, args: [{
-                selector: '[euiMenuItemTemplate]'
-            },] },
-];
-/** @nocollapse */
-MenuItemTemplateDirective.ctorParameters = function () { return [
-    { type: ViewContainerRef, },
-]; };
-MenuItemTemplateDirective.propDecorators = {
-    'value': [{ type: Input },],
-    'text': [{ type: Input },],
-    'template': [{ type: Input, args: ['euiMenuItemTemplate',] },],
-};
-//# sourceMappingURL=menu-item-template.directive.js.map
+import{Directive,ViewContainerRef,Input}from"@angular/core";var MenuItemTemplateDirective=function(){function MenuItemTemplateDirective(viewContainer){this.viewContainer=viewContainer}return MenuItemTemplateDirective.prototype.ngOnInit=function(){this.view=this.viewContainer.createEmbeddedView(this.template,{$implicit:this.value,text:this.text})},MenuItemTemplateDirective.prototype.ngOnDestroy=function(){this.view.destroy()},MenuItemTemplateDirective}();export{MenuItemTemplateDirective};MenuItemTemplateDirective.decorators=[{type:Directive,args:[{selector:"[euiMenuItemTemplate]"}]}],MenuItemTemplateDirective.ctorParameters=function(){return[{type:ViewContainerRef}]},MenuItemTemplateDirective.propDecorators={value:[{type:Input}],text:[{type:Input}],template:[{type:Input,args:["euiMenuItemTemplate"]}]};

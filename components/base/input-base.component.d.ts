@@ -19,7 +19,7 @@ export declare class InputBaseComponent<T> extends ValueAccessorBase<T> {
     tabindex: number;
     cls: string;
     inputCls: string;
-    inputStyle: any;
+    inputStyle: Object;
     inputId: string;
     onFocus: EventEmitter<{}>;
     onBlur: EventEmitter<{}>;

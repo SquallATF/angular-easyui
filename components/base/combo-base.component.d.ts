@@ -9,7 +9,7 @@ export declare class ComboBaseComponent<T> extends InputBaseComponent<T> {
     hasDownArrow: boolean;
     arrowAlign: string;
     panelAlign: string;
-    panelStyle: any;
+    panelStyle: Object;
     multiple: boolean;
     separator: string;
     delay: number;
