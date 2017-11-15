@@ -1,6 +1,6 @@
 {
   "name": "angular-easyui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "EasyUI for Angular",
   "main": "./components/easyui/easyui.module.js",
   "types": "./components/easyui/easyui.module.d.ts",

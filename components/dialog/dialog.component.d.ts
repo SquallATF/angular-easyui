@@ -1,4 +1,4 @@
-import { ElementRef } from '@angular/core';
+import { EventEmitter, ElementRef } from '@angular/core';
 import { PanelComponent } from '../panel/panel.component';
 export declare class DialogComponent extends PanelComponent {
     hostRef: ElementRef;
@@ -7,19 +7,22 @@ export declare class DialogComponent extends PanelComponent {
     borderType: string;
     closable: boolean;
     modal: boolean;
+    onOpen: EventEmitter<{}>;
+    onClose: EventEmitter<{}>;
     maskEl: HTMLElement;
     initialized: boolean;
-    private _panelCls;
-    private _headerCls;
-    private _bodyCls;
-    private _footerCls;
-    private _closed;
+    _panelCls: string;
+    _headerCls: string;
+    _bodyCls: string;
+    _footerCls: string;
+    _closed: boolean;
     panelCls: string;
     headerCls: string;
     bodyCls: string;
     footerCls: string;
     closed: boolean;
     constructor(hostRef: ElementRef);
+    ngAfterViewInit(): void;
     ngOnDestroy(): void;
     initDialog(): void;
     openMask(): void;
