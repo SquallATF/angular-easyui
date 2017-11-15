@@ -6,7 +6,7 @@ export declare const DATEBOX_TEMPLATE: string;
 export declare class DateBoxComponent extends ComboBaseComponent<Date> {
     calendar: CalendarComponent;
     cellTemplate: CellTemplateDirective;
-    selection: any;
+    selection: Date;
     format: string;
     formatter: Function;
     parser: Function;

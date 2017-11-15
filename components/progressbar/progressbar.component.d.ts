@@ -2,5 +2,5 @@ export declare class ProgressBarComponent {
     value: number;
     showValue: boolean;
     barCls: string;
-    barStyle: any;
+    barStyle: Object;
 }

@@ -12,6 +12,7 @@ export declare class GridBaseComponent extends ListBaseComponent {
     view2: any;
     view3: any;
     rowHeight: number;
+    rowCss: any;
     frozenWidth: any;
     frozenAlign: string;
     sorts: any[];

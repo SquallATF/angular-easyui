@@ -1,5 +1,5 @@
 /**
- * EasyUI for Angular 0.1
+ * EasyUI for Angular 0.2
  * 
  * Copyright (c) 2009-2017 www.jeasyui.com. All rights reserved.
  *
@@ -7,33 +7,4 @@
  * To use it on other terms please contact us: info@jeasyui.com
  *
  */
-import { Directive, ViewContainerRef, Input } from '@angular/core';
-var DateBoxCellTemplateDirective = (function () {
-    function DateBoxCellTemplateDirective(viewContainer) {
-        this.viewContainer = viewContainer;
-    }
-    DateBoxCellTemplateDirective.prototype.ngOnInit = function () {
-        this.view = this.viewContainer.createEmbeddedView(this.template, {
-            '\$implicit': this.date
-        });
-    };
-    DateBoxCellTemplateDirective.prototype.ngOnDestroy = function () {
-        this.view.destroy();
-    };
-    return DateBoxCellTemplateDirective;
-}());
-export { DateBoxCellTemplateDirective };
-DateBoxCellTemplateDirective.decorators = [
-    { type: Directive, args: [{
-                selector: '[euiDateBoxCellTemplate]'
-            },] },
-];
-/** @nocollapse */
-DateBoxCellTemplateDirective.ctorParameters = function () { return [
-    { type: ViewContainerRef, },
-]; };
-DateBoxCellTemplateDirective.propDecorators = {
-    'date': [{ type: Input },],
-    'template': [{ type: Input, args: ['euiDateBoxCellTemplate',] },],
-};
-//# sourceMappingURL=datebox-celltemplate.directive.js.map
+import{Directive,ViewContainerRef,Input}from"@angular/core";var DateBoxCellTemplateDirective=function(){function DateBoxCellTemplateDirective(viewContainer){this.viewContainer=viewContainer}return DateBoxCellTemplateDirective.prototype.ngOnInit=function(){this.view=this.viewContainer.createEmbeddedView(this.template,{$implicit:this.date})},DateBoxCellTemplateDirective.prototype.ngOnDestroy=function(){this.view.destroy()},DateBoxCellTemplateDirective}();export{DateBoxCellTemplateDirective};DateBoxCellTemplateDirective.decorators=[{type:Directive,args:[{selector:"[euiDateBoxCellTemplate]"}]}],DateBoxCellTemplateDirective.ctorParameters=function(){return[{type:ViewContainerRef}]},DateBoxCellTemplateDirective.propDecorators={date:[{type:Input}],template:[{type:Input,args:["euiDateBoxCellTemplate"]}]};

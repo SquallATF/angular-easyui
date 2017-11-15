@@ -11,7 +11,7 @@ export declare class SubMenuComponent {
     left: number;
     top: number;
     zIndex: number;
-    parentItem: any;
+    parentItem: MenuItemComponent;
     constructor(menu: MenuComponent, hostRef: ElementRef);
     ngAfterContentInit(): void;
     initItems(): void;

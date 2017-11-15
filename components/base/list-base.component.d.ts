@@ -23,10 +23,15 @@ export declare class ListBaseComponent {
     rowSelect: EventEmitter<{}>;
     rowUnselect: EventEmitter<{}>;
     rowClick: EventEmitter<{}>;
+    cellSelect: EventEmitter<{}>;
+    cellUnselect: EventEmitter<{}>;
+    cellClick: EventEmitter<{}>;
     _initialized: boolean;
     pageState: any;
     highlightRow: any;
+    highlightCell: any;
     selectedRows: any[];
+    selectedCells: any[];
     rows: any[];
     _data: any[];
     selection: any;
@@ -38,12 +43,18 @@ export declare class ListBaseComponent {
     onPageChange(event: any): void;
     onVirtualPageChange(event: any): void;
     onRowClick(row: any, event: any): void;
+    onCellClick(row: any, column: any, event: any): void;
     sortData(): void;
     doEnter(): void;
     getSelectedIndex(row: any): number;
-    isSelected(row: any): boolean;
+    getSelectedCellIndex(row: any, column: any): number;
+    isCellSelectionMode(): boolean;
+    isHighlighted(row: any, column?: any): boolean;
+    isSelected(row: any, column?: any): boolean;
     selectRow(row: any): void;
     unselectRow(row: any): void;
+    selectCell(row: any, column: any): void;
+    unselectCell(row: any, column: any): void;
     clearSelections(): void;
     navRow(step: number): void;
 }

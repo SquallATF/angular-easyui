@@ -9,12 +9,23 @@ export declare class DataGridComponent extends GridBaseComponent {
     idField: string;
     groupField: string;
     expanderWidth: number;
+    editMode: string;
+    clickToEdit: boolean;
+    dblclickToEdit: boolean;
+    rowDblClick: EventEmitter<{}>;
+    cellDblClick: EventEmitter<{}>;
+    rowContextMenu: EventEmitter<{}>;
+    cellContextMenu: EventEmitter<{}>;
     rowExpand: EventEmitter<{}>;
     rowCollapse: EventEmitter<{}>;
     groupExpand: EventEmitter<{}>;
     groupCollapse: EventEmitter<{}>;
+    editBegin: EventEmitter<{}>;
+    editEnd: EventEmitter<{}>;
+    editCancel: EventEmitter<{}>;
     groupData: any[];
     expandedRows: any[];
+    editingItem: any;
     setData(value: any[]): void;
     ngAfterViewInit(): void;
     updateFrozenView(scrollTop: number, rows: any[]): void;
@@ -36,4 +47,8 @@ export declare class DataGridComponent extends GridBaseComponent {
     collapseRow(row: any): void;
     expandRow(row: any): void;
     toggleRow(row: any): void;
+    isEditing(row: any, column?: any): boolean;
+    beginEdit(row: any, column?: any, rowEl?: any): void;
+    endEdit(): void;
+    cancelEdit(): void;
 }

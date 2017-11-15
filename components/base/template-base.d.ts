@@ -11,6 +11,10 @@ export declare class CellTemplateDirective {
     template: TemplateRef<any>;
     constructor(template: TemplateRef<any>);
 }
+export declare class EditTemplateDirective {
+    template: TemplateRef<any>;
+    constructor(template: TemplateRef<any>);
+}
 export declare class FooterTemplateDirective {
     template: TemplateRef<any>;
     constructor(template: TemplateRef<any>);

@@ -1,5 +1,5 @@
 /**
- * EasyUI for Angular 0.1
+ * EasyUI for Angular 0.2
  * 
  * Copyright (c) 2009-2017 www.jeasyui.com. All rights reserved.
  *
@@ -7,30 +7,4 @@
  * To use it on other terms please contact us: info@jeasyui.com
  *
  */
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { SwitchButtonComponent } from './switchbutton.component';
-var SwitchButtonModule = (function () {
-    function SwitchButtonModule() {
-    }
-    return SwitchButtonModule;
-}());
-export { SwitchButtonModule };
-SwitchButtonModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [
-                    SwitchButtonComponent
-                ],
-                imports: [
-                    CommonModule,
-                    FormsModule
-                ],
-                exports: [
-                    SwitchButtonComponent
-                ]
-            },] },
-];
-/** @nocollapse */
-SwitchButtonModule.ctorParameters = function () { return []; };
-//# sourceMappingURL=switchbutton.module.js.map
+import{NgModule}from"@angular/core";import{CommonModule}from"@angular/common";import{FormsModule}from"@angular/forms";import{SwitchButtonComponent}from"./switchbutton.component";var SwitchButtonModule=function(){return function(){}}();export{SwitchButtonModule};SwitchButtonModule.decorators=[{type:NgModule,args:[{declarations:[SwitchButtonComponent],imports:[CommonModule,FormsModule],exports:[SwitchButtonComponent]}]}],SwitchButtonModule.ctorParameters=function(){return[]};
