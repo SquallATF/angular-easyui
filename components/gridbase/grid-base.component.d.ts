@@ -31,11 +31,13 @@ export declare class GridBaseComponent extends ListBaseComponent {
     footerRows: any[];
     private _rows;
     private _footerData;
+    private _filterRules;
     readonly leftFrozenWidth: any;
     readonly rightFrozenWidth: any;
     readonly allColumns: any[];
     rows: any[];
     footerData: any;
+    filterRules: any[];
     constructor(cdRef: ChangeDetectorRef);
     ngOnInit(): void;
     ngAfterContentInit(): void;
@@ -50,4 +52,5 @@ export declare class GridBaseComponent extends ListBaseComponent {
     addSort(col: GridColumnComponent): void;
     initColumnSort(): void;
     findColumn(field: string): GridColumnComponent;
+    addFilterRule(rule: any): void;
 }

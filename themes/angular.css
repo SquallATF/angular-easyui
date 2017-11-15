@@ -365,14 +365,8 @@ eui-treegrid-view,eui-treegrid-body{
 .datagrid-header-inner,.datagrid-footer-inner{
 	overflow: hidden;
 }
-.datagrid-header-inner .datagrid-field-td{
-	border-bottom-color: transparent;
-}
 .datagrid-header-row, .datagrid-row{
 	height: 28px;
-}
-.datagrid-group{
-	height1: 27px;
 }
 .datagrid-cell{
 	text-align: left;
@@ -433,6 +427,31 @@ eui-treegrid-view,eui-treegrid-body{
 }
 .datagrid-editable .textbox, .datagrid-editable .textbox-text{
 	border-radius: 0;
+}
+.datagrid-filter-row .textbox{
+	border-radius: 0;
+}
+.datagrid-filter-c{
+	padding: 4px;
+	height: 35px;
+}
+.datagrid-filter-c> *{
+	height: 27px;
+}
+.datagrid-filter-c .datagrid-editable-input{
+	width: 100%;
+}
+.datagrid-filter-btn{
+	width: 28px;
+}
+.datagrid-filter-btn .textbox{
+	background-color: transparent;
+}
+.datagrid-filter-btn-left{
+	margin-right: 4px;
+}
+.datagrid-filter-btn-right{
+	margin-left: 4px;
 }
 
 .tree-node{

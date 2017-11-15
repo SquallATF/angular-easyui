@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, ElementRef } from '@angular/core';
 import { InputBaseComponent } from '../base/input-base.component';
+export declare const COMBO_BASE_TEXTBOX_TEMPLATE: string;
 export declare const COMBO_BASE_TEMPLATE: string;
 export declare class ComboBaseComponent<T> extends InputBaseComponent<T> {
     hostRef: ElementRef;
@@ -7,6 +8,7 @@ export declare class ComboBaseComponent<T> extends InputBaseComponent<T> {
     arrowRef: ElementRef;
     panelRef: ElementRef;
     hasDownArrow: boolean;
+    arrowIconCls: string;
     arrowAlign: string;
     panelAlign: string;
     panelStyle: Object;

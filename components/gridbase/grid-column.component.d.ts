@@ -1,9 +1,10 @@
-import { HeaderTemplateDirective, CellTemplateDirective, EditTemplateDirective, FooterTemplateDirective } from '../base/template-base';
+import { HeaderTemplateDirective, CellTemplateDirective, EditTemplateDirective, FooterTemplateDirective, FilterTemplateDirective } from '../base/template-base';
 export declare class GridColumnComponent {
     headerTemplate: HeaderTemplateDirective;
     cellTemplate: CellTemplateDirective;
     editTemplate: EditTemplateDirective;
     footerTemplate: FooterTemplateDirective;
+    filterTemplate: FilterTemplateDirective;
     field: string;
     title: string;
     width: any;
@@ -20,6 +21,16 @@ export declare class GridColumnComponent {
     headerStyle: Object;
     cellCss: any;
     expander: boolean;
+    filterable: boolean;
+    filterOperators: string[];
     currOrder: string;
+    grid: any;
+    _filterOperator: string;
+    _filterValue: any;
+    _isFiltering: boolean;
+    _initialized: boolean;
+    filterOperator: string;
+    filterValue: any;
     ngOnInit(): void;
+    ngAfterViewInit(): void;
 }

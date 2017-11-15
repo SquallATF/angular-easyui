@@ -23,6 +23,10 @@ export declare class FooterTemplateDirective {
     template: TemplateRef<any>;
     constructor(template: TemplateRef<any>);
 }
+export declare class FilterTemplateDirective {
+    template: TemplateRef<any>;
+    constructor(template: TemplateRef<any>);
+}
 export declare class GroupTemplateDirective {
     template: TemplateRef<any>;
     groupCls: any;
