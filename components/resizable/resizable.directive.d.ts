@@ -19,6 +19,7 @@ export declare class ResizableDirective {
     touchmoveListener: Function;
     touchendListener: Function;
     constructor(hostRef: ElementRef, renderer: Renderer2);
+    parseEvent(event: any): any;
     onMouseDown(event: any): void;
     onMouseMove(event: any): void;
     onMouseLeave(event: any): void;
@@ -27,6 +28,6 @@ export declare class ResizableDirective {
     bindDocumentEvents(): void;
     unbindDocumentEvents(): void;
     getDirection(e: any): string;
-    resize(e: any): void;
-    applySize(e: any): void;
+    doResize(e: any): void;
+    applySize(): void;
 }

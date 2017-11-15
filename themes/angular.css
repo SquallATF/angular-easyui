@@ -254,6 +254,22 @@ eui-button-group eui-linkbutton:last-child .l-btn{
 .draggable-reverting{
 	transition: all 200ms ease-out;
 }
+.slider-h .slider-tip{
+	transform: translateX(-50%);
+}
+.slider-h .slider-rulelabel span{
+	transform: translateX(-50%);
+}
+.slider-v .slider-tip{
+	margin-top: 0;
+	transform: translate(-100%,-50%);
+}
+.slider-v .slider-rulelabel span{
+	transform: translateY(-50%);
+}
+.slider-v .slider-inner{
+	height: auto;
+}
 
 
 .panel{

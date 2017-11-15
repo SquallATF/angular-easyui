@@ -27,6 +27,7 @@ export declare class DraggableDirective {
     touchendListener: Function;
     hostTransitionListener: Function;
     constructor(hostRef: ElementRef, renderer: Renderer2);
+    parseEvent(event: any): any;
     getHandle(): any;
     onMouseDown(event: any): void;
     onMouseMove(event: any): void;
